@@ -4,13 +4,11 @@ import { showAlertMessage, removeAlertBorder, setConfirmation } from './function
 const modalBg = document.querySelector('.bground');
 const modalBtnClose = document.querySelector('.close');
 const modalBtn = document.querySelectorAll('.modal-btn');
-const formData = document.querySelectorAll('.formData');
 const formReserve = document.getElementById('form_reserve');
 const allCheckBox = document.querySelectorAll('input[type="radio"]');
 const arrierePlan = document.getElementById('arrierePlan');
 const checkboxRadio = document.getElementById('checkbox-alert');
 const consentToTerms = document.getElementById('consent_to_terms');
-const confirmation = document.getElementById('confirmation');
 
 // Declaration Validator
 const regexCharAndNotEmpty = new RegExp(/[^ ]/g);

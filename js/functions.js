@@ -40,6 +40,10 @@ export const setConfirmation = (inputElement) => {
   buttonConfirmation.classList.add('button_valid');
   buttonConfirmation.textContent = 'Fermer';
 
+  buttonConfirmation.addEventListener('click', (closeButtonModal) => {
+    document.querySelector('.bground').style.display = 'none';
+  });
+
   inputElement.appendChild(messageConfirmation);
   inputElement.appendChild(buttonConfirmation);
   // TimeOut for Animation
