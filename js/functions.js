@@ -28,8 +28,11 @@ export const showAlertMessage = (inputElement, message) => {
 };
 
 export const setConfirmation = (inputElement) => {
+  // Create Confirmation Background
   const messageConfirmation = document.createElement('div');
+  // Create Confirmation Button
   const buttonConfirmation = document.createElement('button');
+  // Config & Set Values
   messageConfirmation.classList.add('arrierePlanTitle');
   messageConfirmation.textContent = 'Merci pour votre inscription';
   buttonConfirmation.classList.add('button');
@@ -39,6 +42,7 @@ export const setConfirmation = (inputElement) => {
 
   inputElement.appendChild(messageConfirmation);
   inputElement.appendChild(buttonConfirmation);
+  // TimeOut for Animation
   setTimeout(() => {
     inputElement.classList.add('affiche');
   }, 250);
