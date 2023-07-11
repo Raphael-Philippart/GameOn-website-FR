@@ -27,8 +27,21 @@ export const showAlertMessage = (inputElement, message) => {
   setAlertMessage(inputElement, message, '#FF4E60', '14px', '#FF4E60');
 };
 
-export const setConfirmation = (inputElement, message) => {
-  setAlertMessage(inputElement, message, 'green', '14px', '');
+export const setConfirmation = (inputElement) => {
+  const messageConfirmation = document.createElement('div');
+  const buttonConfirmation = document.createElement('button');
+  messageConfirmation.classList.add('arrierePlanTitle');
+  messageConfirmation.textContent = 'Merci pour votre inscription';
+  buttonConfirmation.classList.add('button');
+  buttonConfirmation.classList.add('btn-submit');
+  buttonConfirmation.classList.add('button_valid');
+  buttonConfirmation.textContent = 'Fermer';
+
+  inputElement.appendChild(messageConfirmation);
+  inputElement.appendChild(buttonConfirmation);
+  setTimeout(() => {
+    inputElement.classList.add('affiche');
+  }, 250);
 };
 
 export const removeAlertBorder = (inputElement) => {

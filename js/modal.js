@@ -7,6 +7,7 @@ const modalBtn = document.querySelectorAll('.modal-btn');
 const formData = document.querySelectorAll('.formData');
 const formReserve = document.getElementById('form_reserve');
 const allCheckBox = document.querySelectorAll('input[type="radio"]');
+const arrierePlan = document.getElementById('arrierePlan');
 const checkboxRadio = document.getElementById('checkbox-alert');
 const consentToTerms = document.getElementById('consent_to_terms');
 const confirmation = document.getElementById('confirmation');
@@ -69,10 +70,9 @@ formReserve.addEventListener('submit', (e) => {
 
   // Submit Data after Validation
   if (checkFirst && checkLast && checkEmail && checkBirthdate && checkQuantity && checkLocation && checkConsentToTerms) {
-    setConfirmation(confirmation, 'Merci pour votre inscription.');
-
+    setConfirmation(arrierePlan);
     setTimeout(() => {
       formReserve.submit();
-    }, 2000);
+    }, 5000);
   }
 });
