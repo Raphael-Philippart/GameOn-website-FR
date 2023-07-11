@@ -24,11 +24,11 @@ export const setAlertMessage = (
 };
 
 export const showAlertMessage = (inputElement, message) => {
-  setAlertMessage(inputElement, message, 'orange', '15px', 'red');
+  setAlertMessage(inputElement, message, '#FF4E60', '14px', '#FF4E60');
 };
 
 export const setConfirmation = (inputElement, message) => {
-  setAlertMessage(inputElement, message, 'green', '15px', '');
+  setAlertMessage(inputElement, message, 'green', '14px', '');
 };
 
 export const removeAlertBorder = (inputElement) => {

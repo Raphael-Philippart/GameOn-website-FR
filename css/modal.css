@@ -112,6 +112,10 @@ img {
         display: block;
         margin-top: -15px;
     }
+
+    .hero-content > .hero-headline {
+        font-size: 40px;
+    }
 }
 
 main {
