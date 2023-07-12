@@ -27,7 +27,7 @@ export const showAlertMessage = (inputElement, message) => {
   setAlertMessage(inputElement, message, '#FF4E60', '14px', '#FF4E60');
 };
 
-export const setConfirmation = (inputElement) => {
+export const setConfirmation = (inputElement, formReserve) => {
   // Create Confirmation Background
   const messageConfirmation = document.createElement('div');
   // Create Confirmation Button
@@ -41,6 +41,9 @@ export const setConfirmation = (inputElement) => {
   buttonConfirmation.textContent = 'Fermer';
 
   buttonConfirmation.addEventListener('click', (closeButtonModal) => {
+    // Submit Form
+    formReserve.submit();
+    // Close Modal
     document.querySelector('.bground').style.display = 'none';
   });
 

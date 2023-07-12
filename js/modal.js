@@ -68,9 +68,6 @@ formReserve.addEventListener('submit', (e) => {
 
   // Submit Data after Validation
   if (checkFirst && checkLast && checkEmail && checkBirthdate && checkQuantity && checkLocation && checkConsentToTerms) {
-    setConfirmation(arrierePlan);
-    setTimeout(() => {
-      formReserve.submit();
-    }, 5000);
+    setConfirmation(arrierePlan, formReserve);
   }
 });
